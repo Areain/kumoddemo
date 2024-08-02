@@ -28,11 +28,23 @@ header{
     /* justify-content: center; */
     align-items: center;
     color: #fff;
+
+    @media (max-width:768px){
+        flex-direction: column;
+        padding-top: 15px;
+        height: 65px;
+    }
     h3{
         font-size: 18px;
         letter-spacing: 1px;
+        @media (max-width:768px){
+            margin-bottom: 6px;
+        }
     }
     nav{
+        @media (max-width:768px){
+            padding-bottom: 4px;
+        }
         ul{
              display: flex;
              font-size: 14px;
@@ -73,6 +85,11 @@ header{
             
         }
     }
+    .logo{
+        @media (max-width:768px){
+            display: none;
+        }
+    }
 }
 main{
     height: 100vh;
@@ -84,6 +101,10 @@ justify-content: center;
 align-items: center;
 
 .container{
+    /* @media (max-width:768px){
+        margin-left: 10px;
+        margin-right: 10px;
+    } */
     height : 550px;
     width: 800px;
     background: #fff;
@@ -93,12 +114,13 @@ align-items: center;
    /* padding: 12px; */
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
+ 
+   
     .box{
         height: 575px;
         width: 400px;
         border: none;
-        
+  
        
 
     }
